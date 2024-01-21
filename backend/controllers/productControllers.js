@@ -1,9 +1,10 @@
 import Product from "../models/product.js";
 
 export const getProducts = async (req, res) => {
+  const products = await Product.find();
   // Set the response status to 200 and send a JSON object with the message "All Products".
   res.status(200).json({
-    message: "All Products",
+    products,
   });
 };
 
