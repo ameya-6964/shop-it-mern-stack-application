@@ -1,6 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
+import { connectDatabase } from "./config/dbConnect.js";
+
 dotenv.config({ path: "backend/config/config.env" });
+
+//Connecting To Database
+connectDatabase();
 
 // Create an instance of the Express application
 const app = express();
