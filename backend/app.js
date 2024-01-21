@@ -10,6 +10,11 @@ connectDatabase();
 // Create an instance of the Express application
 const app = express();
 
+/* 
+used to parse incoming requests with JSON payloads. It is a middleware function that adds the ability to parse JSON data to the Express application.
+ */
+app.use(express.json());
+
 // Import all routes
 import productRoutes from "./routes/products.js";
 app.use("/api/v1", productRoutes);
