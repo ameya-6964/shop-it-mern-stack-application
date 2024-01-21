@@ -1,0 +1,16 @@
+{
+  "name": "shop-it-v2",
+  "version": "1.0.0",
+  "description": "MERN Ecommerce Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ameya Belvalkar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0"
+  }
+}
