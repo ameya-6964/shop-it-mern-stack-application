@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 import { connectDatabase } from "./config/dbConnect.js";
 import errorMiddleware from "./middlewares/error.js";
 
@@ -22,10 +23,13 @@ const app = express();
 used to parse incoming requests with JSON payloads. It is a middleware function that adds the ability to parse JSON data to the Express application.
  */
 app.use(express.json());
+app.use(cookieParser());
 
 // Import all routes
 import productRoutes from "./routes/products.js";
+import authRoutes from "./routes/auth.js";
 app.use("/api/v1", productRoutes);
+app.use("/api/v1", authRoutes);
 
 //Using Error Middleware
 app.use(errorMiddleware);
