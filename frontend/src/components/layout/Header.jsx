@@ -31,7 +31,7 @@ const Header = () => {
       <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
         <a href="/cart" style={{ textDecoration: "none" }}>
           <span id="cart" className="ms-3">
-            Cart
+            Cart&nbsp;
           </span>
           <span className="ms-1" id="cart_count">
             0
@@ -53,7 +53,7 @@ const Header = () => {
                 className="rounded-circle"
               />
             </figure>
-            <span>User</span>
+            <span>User&nbsp;</span>
           </button>
           <div
             className="dropdown-menu w-100"
