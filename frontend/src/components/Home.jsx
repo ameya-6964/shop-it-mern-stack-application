@@ -1,5 +1,6 @@
 import React from "react";
 import MetaData from "./layout/MetaData";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
                   />
                   <div className="card-body ps-3 d-flex justify-content-center flex-column">
                     <h5 className="card-title">
-                      <a href="/">Product Name 1</a>
+                      <Link to="/">Product Name 1</Link>
                     </h5>
                     <div className="ratings mt-auto d-flex">
                       <div className="star-ratings">
@@ -37,9 +38,9 @@ const Home = () => {
                       </span>
                     </div>
                     <p className="card-text mt-2">₹100</p>
-                    <a href="/" id="view_btn" className="btn btn-block">
+                    <Link to="/" id="view_btn" className="btn btn-block">
                       View Details
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
