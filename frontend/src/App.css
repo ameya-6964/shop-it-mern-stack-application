@@ -602,3 +602,23 @@ footer {
 .contant_box_404 {
   margin-top: -30px;
 }
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .page_404 {
+    margin-left: 0;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .four_zero_four_bg h1 {
+    font-size: 60px;
+  }
+
+  .contant_box_404 h3 {
+    font-size: 30px;
+  }
+}
